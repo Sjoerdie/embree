@@ -63,8 +63,8 @@ namespace embree
       __forceinline void switch_state(int from, int to) 
       {
 	__memory_barrier();
-	bool success = state.compare_exchange_strong(from,to);
-	assert(success);
+//	bool success = state.compare_exchange_strong(from,to);
+//	assert(success);
       }
 
       /*! try to switch from one state to another */
